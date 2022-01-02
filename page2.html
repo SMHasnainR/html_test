@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+    <h1>Learning Web Development </h1> 
+    <h2>Index</h2>
+    <ul>
+        <li>
+            <a href="page1.html#html"> HTML</a>
+            <ol>
+                <li> <a href="page1.html#lists">  Lists</a></li>
+                <li> <a href="page1.html#links">  Links</a></li>
+                <li> <a href="page1.html#images">  Images</a></li>
+            </ol>
+        </li>
+        <li>
+            <a href="page2.html#css"> CSS</a>
+            <ol>
+                <li> <a href="page2.html#color"> Color</a></li>
+                <li> <a href="page2.html#text">Text</a></li>
+                <li> <a href="page2.html#boxes">Boxes</a></li>
+            </ol>
+        </li>
+    </ul>
+    <hr>
+    <hr>
+    <section>
+        <h2 id="css"> CSS</h2>
+    </section>
+    <hr>
+    <hr>
+    <section id="color">
+        <h3>Color</h3>
+        <h4>
+            rgb values
+        </h4>
+        <p>
+            These express colors in terms of how much red, green and blue are used to make it up. For example: rgb(100,100,90)
+        </p>
+        <h4> hex Codes</h4>
+        <p>
+            These are six-digit codes that represent the amount of red, green and blue in a color, preceded by a pound or hash # sign. For example: #ee3e80
+        </p>
+        <h4>
+            Color names 
+        </h4>
+        <p>
+
+            There are 147 predefined color names that are recognized by browsers. For example:
+            DarkCyan
+        </p>
+    </section>
+    <hr>
+    <section id="text">
+        <h3>Text - (Font Size)</h3>
+        <h4>Pixels</h4>
+        <p>
+            Pixels are commonly used because they allow web designers very precise control over how much space their text takes up. The number of pixels is
+            followed by the letters <b>px</b>.
+        </p>
+        <h4>Percentages</h4>
+        <p>
+            The default size of text in browsers is 16px. So a size of 75% would be the equivalent of 12px, and 200% would be 32px.
+            If you create a rule to make all text inside the < body > element to be 75% of the default size (to make it 12px), and then specify another rule that indicates the content of an element inside the <body> element should be 75% size, it will be 9px (75% of the
+            12px font size)
+        </p>
+        <h4>EM</h4>
+        <p>
+            An <i>em</i> is equivalent to the width of a letter m.
+        </p>
+    </section>
+    <hr>
+    <section id="boxes">
+        <h3>Boxes</h3>
+        <p>
+            <img src="boxes.png" alt="" align='right' >
+            CSS3 introduces the ability to create rounded corners on any box, using a property called border-radius. The value indicates the size of the radius in pixels.
+            Older browsers that do not support this property will show a box with right-angled corners.
+            The -moz-border-radius and -webkit-border-radius properties are not in the CSS specification. However, they are used in some versions of Chrome, Firefox, and Safari to offer early support for this style (and therefore can be used to achieve this effect in more browsers).
+            You can specify individual values for each corner of a box using:
+            border-top-right-radius border-bottom-right-radius border-bottom-left-radius border-top-left-radius
+            You can also use a shorthand of these four properties (in clockwise order: top, right, bottom, left). For example:
+            border-radius: 5px, 10px,
+            5px, 10px;
+        </p>
+    </section>
+</body>
+</html>
